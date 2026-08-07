@@ -58,16 +58,16 @@ The token is only ever sent to `https://api.nordvpn.com` over HTTPS.
 The repo is a Nix flake, so you can run it without installing anything:
 
 ```bash
-# Directly from GitHub (replace your-user):
-nix run github:your-user/nordvpn-wg -- de berlin
-nix run github:your-user/nordvpn-wg -- -o ~/vpn de750
+# Directly from GitHub:
+nix run github:zhuhe6644/nordvpn-wg -- de berlin
+nix run github:zhuhe6644/nordvpn-wg -- -o ~/vpn de750
 
 # From a local checkout:
 nix run . -- de
 nix run . -- list de
 
 # Install into your user profile:
-nix profile install github:your-user/nordvpn-wg
+nix profile install github:zhuhe6644/nordvpn-wg
 ```
 
 **Remember the `--`**: everything after it is passed to the script, so

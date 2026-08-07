@@ -35,7 +35,7 @@
               wrapProgram $out/bin/nordvpn-wg \
                 --prefix PATH : ${
                   pkgs.lib.makeBinPath [
-                    pkgs.bash      # for the /usr/bin/env bash shebang
+                    pkgs.bash # for the /usr/bin/env bash shebang
                     pkgs.coreutils # tr, sort, cat, mkdir, chmod
                     pkgs.curl
                     pkgs.gnugrep
